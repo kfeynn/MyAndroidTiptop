@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0.0dip" >
+
+    <!--整个布局-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dip"
+        android:padding="5.0dip"
+        android:background="@layout/bg_child"
+        android:orientation="vertical" >
+
+        <!--产品名称显示-->
+        <TextView
+            android:id="@+id/tv_boxnum"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:layout_alignParentLeft="true"
+            android:maxLines="1"
+            android:textColor="@color/commo_text_color"
+            android:text="箱号"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/tv_pmn041"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:layout_alignParentLeft="true"
+            android:maxLines="1"
+            android:textColor="@color/commo_text_color"
+            android:text="品名"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/tv_box_pmn20"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:textColor="@color/commo_text_color"
+            android:gravity="center"
+            android:text="采购数量"
+            android:textSize="18.0sp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.TestActivity"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/titlebar_back">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_show_dnnum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="28dp"
+            android:text="送货单号：" />
+    </LinearLayout>
+
+    <View
+        style="@style/line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@layout/bg_group">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="5.0dip"
+            android:background="@color/app_gray_hl"
+            android:textSize="20.0sp"
+            android:text="      物料编号tt" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/app_gray_hl"
+            android:padding="5.0dip"
+            android:gravity="left"
+            android:textSize="20.0sp"
+            android:text="采购单位" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/app_gray_hl"
+            android:padding="5.0dip"
+            android:textSize="20.0sp"
+            android:layout_alignParentLeft="true"
+            android:text="采购数量" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gridview_receiving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@null"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0.0dip" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_input_dnnum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:textSize="25dp"
+            android:text="输入送货单号" />
+        <Button
+            android:id="@+id/btn_input_boxnum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:textSize="25dp"
+            android:text="输入箱号" />
+        <Button
+            android:id="@+id/btn_input_receiving"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:textSize="25dp"
+            android:text="强制收货" />
+
+    </LinearLayout>
+</LinearLayout>

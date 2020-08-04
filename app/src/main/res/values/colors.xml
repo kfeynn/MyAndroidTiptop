@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="commo_text_color">#ff333333</color>
+    <color name="white">#ffffff</color>
+    <color name="line">#ffd3dde6</color>
+    <color name="red">#FF0033</color>
+    <color name="titlebar_color">#0079ff</color>
+    <color name="transparent">#0000</color>
+    <color name="app_titlebar_btn_pressed_bg">#e0e0e0e0</color>
+    <color name="app_blue">#0079ff</color>
+    <color name="app_blue_hl">#5392ef</color>
+    <color name="app_gray">#808080</color>
+    <color name="app_gray_hl">#dfdfdf</color>
+    <!--footer背景色-->
+    <color name="footer_bg">#FAFAFA</color>
+    <color name="footer_text_color">#AAAAAA</color>
+
+    <color name="blue">#196bc5</color>
+    <color name="blue_d">#81b6f0</color>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0.0dip" >
+
+<!--整个布局-->
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="12.0dip"
+        android:background="@layout/bg_child"
+        android:orientation="vertical" >
+
+        <!--产品图片显示-->
+        <ImageView
+	        android:id="@+id/iv_item"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+	        android:layout_gravity="center"/>
+
+        <!--产品名称显示-->
+        <TextView
+	        android:id="@+id/tv_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="10dip"
+	        android:maxLines="1"
+	        android:textColor="@color/commo_text_color"
+            android:textSize="15.0sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
